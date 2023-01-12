@@ -212,15 +212,18 @@
               </div>
             </li>
           </ul>
-          <li class="nav-item dropdown menu">
-            <a
-              class="nav-link dropdown-toggle"
-              style="margin-right: 150px"
-              id="navbardrop"
-              data-toggle="dropdown">
-              Get to know me!
-            </a>
-          </li>
+          <a
+            class="nav-link"
+            href="https://medium.com/"
+            style="margin-right: 10px">
+            Get to know me!
+          </a>
+          <div class="social-part">
+            <a href="https://twitter.com/MIKUAI_INU"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+            <i class="fa fa-medium" aria-hidden="true"></i>
+          </div>
         </div>
       </nav>
       <div style="position: absolute; top: 10px; right: 480px; z-index: 3">
@@ -234,7 +237,7 @@
       </div>
     </div>
 
-    <script src="https://unpkg.com/three@0.143.0/examples/js/libs/ammo.wasm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.143.0/examples/js/libs/ammo.wasm.js"></script>
 
     <!-- Import maps polyfill -->
     <!-- Remove this when import maps will be widely supported -->
@@ -245,20 +248,16 @@
     <script type="importmap">
       {
         "imports": {
-          "three": "https://unpkg.com/three@0.143.0/build/three.module.js"
+          "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.143.0/three.module.min.js"
         }
       }
     </script>
-
     <script type="module">
       import * as THREE from "three";
-
-      import { OrbitControls } from "https://unpkg.com/three@0.143.0/examples/jsm/controls/OrbitControls.js";
-      import { OutlineEffect } from "https://unpkg.com/three@0.143.0/examples/jsm/effects/OutlineEffect.js";
-      import { MMDLoader } from "https://unpkg.com/three@0.143.0/examples/jsm/loaders/MMDLoader.js";
-      import { MMDAnimationHelper } from "https://unpkg.com/three@0.143.0/examples/jsm/animation/MMDAnimationHelper.js";
-
-      // 			let stats;
+      import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.143.0/examples/jsm/controls/OrbitControls.js";
+      import { OutlineEffect } from "https://cdn.jsdelivr.net/npm/three@0.143.0/examples/jsm/effects/OutlineEffect.js";
+      import { MMDLoader } from "https://cdn.jsdelivr.net/npm/three@0.143.0/examples/jsm/loaders/MMDLoader.js";
+      import { MMDAnimationHelper } from "https://cdn.jsdelivr.net/npm/three@0.143.0/examples/jsm/animation/MMDAnimationHelper.js";
 
       let mesh, camera, scene, renderer, effect;
       let helper, ikHelper, physicsHelper;
